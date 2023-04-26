@@ -1,17 +1,17 @@
-<h1>List of all directors</h1>
+<h1>List of all actors</h1>
 
 <table border="1">
 
-<% @list_of_directors.all.each do |a_thing| %>
+<% @list_of_actors.all.each do |a_thing| %>
 <tr>
 <td><%= a_thing.id %></td>
 <td>
-  <img src="https://robohash.org/<%= a_thing.name %>">
+  <img src="https://robohash.org/<%= a_thing.id %>">
 </td>
 <td><%= a_thing.name %></td>
 <td><%= a_thing.dob %></td>
 <td>
-    <a href = "/directors/<%= a_thing.id %>">
+    <a href = "/actors/<%= a_thing.id %>">
     Show details
     </a>
 </td>
